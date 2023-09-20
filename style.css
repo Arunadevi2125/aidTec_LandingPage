@@ -1,0 +1,220 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lumanosimo', cursive;
+}
+
+.body {
+    min-height: 91vh;
+    background: url(./Images/background\ image.gif)no-repeat 0 0;
+    background-size: cover;
+    display: flex;
+    flex: 1;
+    /*position: relative;*/
+    padding-top: 60px;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url(./Images/background\ image.gif);
+}
+
+.header {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    flex-basis: 100px;
+}
+
+.logo {
+    display: flex;
+    margin-left: 20px;
+}
+
+.logo h2 {
+    padding: 10px;
+    padding-left: 10px;
+}
+
+.navbar ul {
+    display: flex;
+    margin-right: 30px;
+}
+
+.navbar ul li {
+    padding: 15px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.left {
+    margin: 50px 2em 50px 6em;
+}
+
+.smallfish ul li img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+.gold img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin: 20px;
+    margin-left: 50px;
+}
+
+.navbar ul li .fishes, .navbar ul li a:hover {
+    color: blue;
+}
+
+.right {
+    float: right;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10%;
+}
+
+.smallfish ul {
+    display: flex;
+    margin-top: 40px;
+}
+
+.title {
+    font-size: 2.5em;
+    letter-spacing: 1px;
+}
+
+.title strong {
+    font-size: 1.5em;
+    line-height: 80px;
+    display: block;
+}
+
+.title,.fishpara,.goldfish,h4 {
+    color: white;
+}
+
+.goldfish {
+    margin-left: 110px;
+}
+
+h4 {
+    margin-left: 20px;
+    padding-top: 10px;
+}
+
+.buy {
+    border-radius: 30px;
+    padding: 5px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    border-color: blue;
+    color: darkblue;
+}
+
+span {
+    color: blue;
+}
+
+.buy:hover {
+    background-color: darkblue;
+    color: white;
+}
+
+.gold img:hover {
+    height: 210px;
+    width: 210px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.smallfish ul li img:hover {
+    height: 110px;
+    width: 110px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.fishpara {
+    width: 60%;
+    margin: 20px 0;
+}
+
+.logofish {
+    color: black;
+}
+
+.content span {
+    transform: translate(-50%, -50%);
+}
+
+.content .wave {
+    position: relative;
+    right: 110px;
+}
+
+span {
+    font-family: "Poppins", sans-serif;
+}
+
+.content span:nth-child(1) {
+    color: transparent;
+    -webkit-text-stroke: 2px #03a9f4;
+}
+
+.content span:nth-child(2) {
+    color: #03a9f4;
+    animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+    0%,
+    100% {
+        clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+    }
+    50% {
+        clip-path: polygon(0% 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+    }
+}
+
+#home {
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 5px 10px;
+    background-image: linear-gradient(rgba(192, 23, 136, 0.4),rgba(50, 97, 185, 0.4));
+}
+
+.navbar ul li #home:hover {
+    color: white;  
+}
+
+.container {
+    display: flex;
+    flex: 1;
+}
+
+@media (max-width:800px) {
+    .container{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .body{
+        display: flex;
+        min-height: 91vh;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+    
